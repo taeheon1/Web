@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>JQ17</title>
+    
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('img').attr( {width: "100px" , height:"100px"} );
+            $("img").attr("src", function(){ 
+                return "../img/" + this.title + ".jpg";
+            });
+            $('img').attr("tirle", function(index){
+                return index + "번 엘리먼트 타이틀은" + this.title;
+            });
+        });
+    </script>
+</head>
+<img title="pum1"> <img title="pum2"> <img title="pum3">
+</body>
+
+</html>

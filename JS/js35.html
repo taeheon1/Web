@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>JS35</title>
+    <script>
+        function Person(name, age) { //클래스 생성자 정의
+            this.name = name; //멤버 속성
+            this.age = age;
+            this.display = funtion() { //멤버 메소드
+                alert(this.name + " : " + this.age);
+            }
+        }
+        var obj = new Person("홍길동", 20);
+        obj.display();
+
+    </script></head><body></body></html>

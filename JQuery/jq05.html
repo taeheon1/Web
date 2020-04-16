@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>JQ05</title>
+    <style type="text/css">
+        em{ font-size: 12pt; line-height: 40px;}
+    </style>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('div em').css('border', '3pt solid #f00')
+                    .css('padding', '7pt 9pt 11pt 13pt');
+            $('span em').css('border', '1pt dotted #0f0')
+                    .css('padding', '7pt 10pt');
+            console.log("엘리먼트 개수: " + $('div em').length);
+            console.log("엘리먼트 개수: " + $('span em').length);
+        });
+       
+    </script>
+</head>
+
+<body>
+<div><em>Hello!</em><em>jQuery</em><em>forever</em></div>   
+<span><em>Good Bye!</em><em>javascript</em></span>
+</body></html>

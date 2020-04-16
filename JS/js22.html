@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>js21</title>
+
+</head>
+
+<body>
+    <form id="frm1">
+        <input type="hidden" name="id" value="guest"><br>
+        First name: <input type="text" name="fname" value="Donald"><br>
+        Last name: <input type="text" name="lname" value="Duck"><br>
+        <textarea name="comment" rows="3" cols="50">댓글 입력</textarea><br>
+
+
+    </form>
+    <botton onclick="myFunction()">Click</botton>
+    <p id="demo"></p>
+
+    <script>
+        function myFunction() {
+            var x = document.forms["frm1"]; //frm1 에있는 것들 모두 가져오기
+            var text = "", i;
+            for (i = 0; i < x.length; i++) {
+                text += "value: " + x.elements[i].value + "<br>";
+                text += "name: " + x.elements[i].name + "<br>";
+                text += "tagName: " + x.elements[i].tagName + "<br>";
+            }
+            document.getElementById("demo").innerHTML = text;
+        }
+    </script>
+</body>
+</html>

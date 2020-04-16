@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>JS14</title>
+    <script>
+        // 이벤트 핸들러 함수
+        window.onload = function() {
+            //HTML 엘리먼트 일부에 이벤트 핸들러 지정
+            document.getElementById("button01").onclick = test1; //매개변수가 없을때 소괄호를 없앤다 있으면 에러
+            document.getElementById("a01").onmouseover = function(evt) {
+                test2('block'); // 해당 객체영역에 마우스 커서가 들어갔을때 (데스크 탑에서만 가능 되도록이면 사용 x)
+            };
+            document.getElementById("a01").onmouseout = function(evt) {
+                test2('none');
+            };
+            document.getElementById("select01").onchange = function(evt) {
+                test3(this.value);
+            };
+        };
+
+        function test1() {
+            alert("사용자 정의 함수");
+        }
+
+        function test2(status) {
+            var divObj = document.getElementById("div01");
+            divObj.style.display = status;
+        }
+
+        function test3(email) {
+            var text = document.getElementById("email2");
+            text.value = email;
+        }
+
+    </script>
+</head>
+
+<body>
+    <!-- 이벤트 핸들러 지정을 위해 id 속성 필수 -->
+    <p><input id="button01" type="button" value="테스트"></p>
+    <p><a href="#" id="a01"><img src="../img/pum2.jpg"></a></p>
+    <div id="div01" style="border: 1px solid green; width: 350px; height: 210px; display: none;">
+        <p align="center">웹/모바일에 최적화된 정보를 학습...</p>
+        <p><img src="../img/pum1.jpg"></p>
+    </div>
+    <p>이메일: <input type="text" id="email1"> @ <input type="text" id="email2"><select id="select01">
+            <option value="">직접입력</option>
+            <option value="naver.com">네이버</option>
+            <option value="google.co.kr">구글</option>
+            <option value="daum.net">다음</option>
+        </select></p>
+</body>
+
+</html>

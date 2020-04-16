@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>DOM객체</title>
+
+</head>
+
+<body>
+    <p id="intro">Hello World!</p>
+    <p id="demo"></p>
+    <script>
+        var myElement = document.getElementById("intro");
+        document.getElementById("demo").innerHTML = myElement.innerHTML;
+    </script>
+</body>
+
+</html>

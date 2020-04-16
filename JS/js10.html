@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>동적for문</title>
+
+    <script>
+        var data = prompt("숫자 5개 입력(공백으로 구분)", "");
+        var arr = data.split(" ");
+        var max = arr[0]; //비교할 기준을 정해논다.
+        var min = arr[0];
+        for (var i = 1; i < arr.length; i++) { 
+            if (parseInt(max) < parseInt(arr[i]))
+                max = arr[i];
+            if (parseInt(min) > parseInt(arr[i]))
+                min = arr[i];
+        }
+        alert("최대값은 " + max + "이고, 최소값은 " + min + "이다.")
+
+    </script>
+</head>
+
+<body></body>
+
+</html>

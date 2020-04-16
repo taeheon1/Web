@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>JQ34</title>
+    <style>
+        img {
+            width: 140px;
+            height: 120px;
+        }
+    </style>
+
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('img').one('click', function() { //one 이벤트를 한번만
+                var $target = $(event.target);
+                //var $targer = $(this);
+                // $target.width($target.width() + 20);
+                
+                $(this).width($(this).width()*2 );
+                // $target.height($target.height() + 20);
+                $(this).height($(this).height()*2 );
+            }); // target 은 이벤트가 발생한 대상 엘리먼트
+                
+        }); 
+    </script>
+</head>
+
+<body>
+    <img src="../img/pum2.jpg">
+
+
+</body>
+
+</html>

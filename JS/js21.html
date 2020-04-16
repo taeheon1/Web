@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>js21</title>
+
+</head>
+
+<body>
+    <p>Hello World!</p>
+    <p class="intro">The DOM is very useful.</p>
+    <p class="intro">This example demonstrates the getElementsByClassName method.</p>
+    <p id="demo"></p>
+    <script>
+        var x = document.getElementsByClassName("intro");
+        document.getElementById("demo").innerHTML = x[0].innerHTML;
+
+    </script>
+</body>
+
+</html>

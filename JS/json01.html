@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>JSon01</title>
+   
+</head>
+
+<body>
+   <p>JavaScript object:</p>
+    <p id="demo1"></p><p id="demo2"></p>
+    <p id="demo3"></p><p id="demo4"></p>
+    <script>
+        var myObj, x, y;
+        myObj = { "name" : "John", "age" : 30, "city": "New York" };
+        x = myObj.name;
+        document.getElementById("demo1").innerHTML = x;
+        y = myObj["name"];
+        document.getElementById("demo2").innerHTML = y;
+        myObj.name = "Gilbert";
+        document.getElementById("demo3").innerHTML = myObj.name;
+        myObj["name"] = "Gilbert";
+        document.getElementById("demo4").innerHTML = myObj.name;
+    </script>
+    
+</body></html>

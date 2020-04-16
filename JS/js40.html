@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>JS40</title>
+    <script>
+        function func1() {
+            var won1 = Number("100원");
+            var dollar1 = Number("1$");
+            alert(won1 + " : " + dollar1);
+        } //하나라도 오류시 전체오류
+
+        function func2() {
+            var won2 = parseInt("100원");
+            var dollar2 = parseInt("1$");
+            alert(won2 + " : " + dollar2);
+        } // 할수있는데 까지 형변환
+    </script>
+</head>
+
+<body>
+    <input type="button" onclick="func1();" value="Number 결과">
+    <input type="button" onclick="func2();" value="parseInt 결과">
+</body></html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>JQ16</title>
+    <style>
+        img{
+            padding :20px;
+        }
+        div{
+            color : blue;
+            font-size: 30px;
+        }
+    </style>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('img').attr("src","../img/pum2.jpg").attr("title", "똘이군").attr("alt","puppy picture");
+            $("div").text($("img").attr("alt"));
+            $("button").click(function(){
+                $(this).next().removeAttr("title");
+            })
+        });
+    </script>
+</head>
+<button>속성 값 제거</button>
+<img><img> <div><h3>속성 메소드</h3></div>
+</body>
+
+</html>

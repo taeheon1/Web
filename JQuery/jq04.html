@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>JQ04</title>
+    
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            var resultText = "";
+            var $serchEles = $('p, span, div.simpletext1');
+            resultText += "엘리먼트 개수: " + $searchEles.length + "\n";
+            $serchEles.each(function(){
+                resultText += $(this).text() + ", ";
+            });
+                alert($.trim(resultText));
+            });
+    </script>
+</head>
+
+<body>
+    <span>simple</span><div class='simpletext1'>jquery</div>
+    <div>basic</div><p>example</p>
+</body></html>

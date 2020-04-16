@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>JS33</title>
+    <script>
+        var student = {}; // Objet 자료형의 객체 생성
+        student.name = "홍길동";
+        student.kor = 80;
+        student.eng = 70;
+        student.mat = 60;
+        student.sum = function() { // 객체 메소드
+            var tot = 0;
+            for (var key in this) {
+                if (key != 'name') {
+                    tot += this[key];
+                }
+            }
+            return tot;
+        }
+        alert(parseInt(student.sum()));
+    </script>
+</head>
+
+<body>
+</body></html>

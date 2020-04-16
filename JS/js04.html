@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>반복문</title>
+    <style>
+        * {
+            font-family: "굴림체";
+        }
+
+    </style>
+    <script>
+        var sub = 9,
+            dan = 7,
+            res = 0;
+        
+        sub--;
+        document.write("sub : " + sub + "<br>");
+        dan++;
+        document.write("dan : " + dan + "<br><br>");
+        for (var i = 1; i <= 9; i++) {
+            res = dan * i;
+            if (res < 10) {
+                document.write(dan + " * " + i + " = &nbsp;" + res + "<br>");
+            } else {
+                document.write(dan + " * " + i + " = " + res + "<br>");
+            }
+        }
+
+    </script>
+</head>
+
+<body></body>
+
+</html>

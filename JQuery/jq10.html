@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>JQ10</title>
+    <style type="text/css">
+        table {
+            table-layout: auto;
+            width:  75%;
+            
+        }
+    </style>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('td:eq(4)').css('backgroundColor', 'pink');
+        });
+    </script>
+</head>
+
+<body>
+    <table>
+    <tr><td>zero</td><td>one</td><td>two</td></tr>
+    <tr><td>three</td><td>four</td><td>five</td></tr>
+    
+    </table>
+</body>
+
+</html>

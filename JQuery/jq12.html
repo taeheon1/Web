@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>JQ12</title>
+   
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('div span:first-child, div span:last-child')
+            .css('text-decoration', 'underline')
+            .css('color', 'red').css('font-size', '20pt');
+        });
+    </script>
+</head>
+
+<body>
+    <div><span>one,</span> <span>two,</span> <span>three,</span>
+    <span>four</span></div>
+    <div><span>five,</span> <span>six,</span> <span>seven,</span>
+        <span>eight</span></div>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>JQ37</title>
+    <style>
+        img {
+            width: 80px;
+            height: 80px;
+            margin-left: 50px;
+        }
+    </style>
+    <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('#sel').change(function (e) {
+                var imgSrc = $(e.target).val();
+                $('#img').attr('src', imgSrc);
+            }).change(); // 값이 변경될 때 발생하는 change 이벤트
+        });
+    </script>
+</head>
+<body>
+    <form name="frm">
+        <table>
+            <tr>
+                <td><select id="sel">
+                        <option value="../img/pum1.jpg">딸기</option>
+                        <option value="../img/pum2.jpg">바나나</option>
+                        <option value="../img/pum3.jpg" selected="selected">사과</option>
+                    </select></td>
+                <td><img id="img"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

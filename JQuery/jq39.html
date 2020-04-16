@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>JQ39</title>
+    <style>
+        div {
+            background: #3d0a44;
+            margin: 3px;
+            width: 80px;
+            height: 40px;
+            float: left;
+        }
+    </style>
+    <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $('#slideUp').click(function(){
+                $('div').slideUp("slow");
+            });
+            $('#slideDown').click(function(){
+                $('div').slideDown("slow");
+            });
+            $('#slideToggle').click(function(){
+                $('div').slideToggle("slow");
+            });
+        })
+    </script>
+</head>
+<body>
+    <p><button id="slideUp">slide Up</button>
+    <button id="slideDown">slide Down</button>
+    <button id="slideToggle">slide Toggle</button></p>
+    <div></div><div></div><div></div>
+</body>
+
+</html>

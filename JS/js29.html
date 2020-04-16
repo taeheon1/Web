@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>js29</title>
+    <script>
+        var myImg = ["../img/pum1.jpg", "../img/pum2.jpg", "../img/pum3.jpg",
+            "../img/pum4.jpg" ];
+        var num = 0;
+        
+        function cha(su) {
+            num = num + su;
+            if(num > myImg.length - 1) num = 0;
+            if(num < 0) num = myImg.length - 1;
+            document.getElementById("pic").src = myImg[num];
+        }
+        
+
+    </script>
+</head>
+
+<body onload = "setInterval('cha(1)', 3000);">
+    <p style="margin: auto; width: 500px; text-align: center;">
+        <img src="../img/pum2.jpg" id="pic" style="width: 500px; height: 300px;"><br><br>
+        <button onclick="cha(-1);" style = "cursor:pointer;">&lt;</button>
+        &nbsp;&nbsp;&nbsp;
+        <button onclick="cha(1);" style = "cursor:pointer;">&gt;</button><br>
+    </p>
+</body>
+</html>

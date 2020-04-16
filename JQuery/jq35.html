@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>JQ34</title>
+    <style>
+        img {
+            width: 200px;
+            height: 250px;
+        }
+    </style>
+
+    <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('img').toggle(function() {
+                $(this).css('opacity', 0.5);
+            },
+            function () {
+                $(this).css('opacity', 1.0);
+            });
+        }); // click할 때 마다 서로 다른 동작(반전) 함수 호출
+
+    </script>
+</head>
+<body>
+    <img src="../img/pum1.jpg">
+</body>
+
+</html>

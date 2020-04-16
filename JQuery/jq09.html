@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>JQ09</title>
+    <style type="text/css">
+        table {
+            table-layout: auto;
+            width:  75%
+        }
+    </style>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('tr:even').css('backgroundColor', 'pink');
+            $('tr:odd').css('backgroundColor', 'yellow');
+        });
+    </script>
+</head>
+
+<body>
+    <table>
+    <tr><td>zero</td></tr><tr><td>one</td></tr>
+    <tr><td>two</td></tr><tr><td>three</td></tr>
+    <tr><td>four</td></tr><tr><td>five</td></tr>
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <style>
+        .container {
+            background-color: #eeeeee;
+        }
+
+        .row {
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+
+        div[class|="col"] {
+            border: 1px solid #cccccc;
+        }
+
+        p {
+            margin: 40px 40px;
+        }
+    </style>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+    </script>
+    <script href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <h1>Offsetting Columns</h1>
+        <div class="row" style="background-color: lavender;">
+            <div class="col-sm-5 col-md-6" style="background-color: lightgrey;">
+                .col-sm-5 .col-md-</div>
+            <div class="col-sm-5 col-sm-offset-2 col-md-6
+             col-md-offset-0" style="background-color: lightcyan;">
+                .col-sm-5.col-sm-offset-2.col-md-6 .col-md-offset-0</div>
+        </div>
+    </div>
+
+</body>
+
+</html>

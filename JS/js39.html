@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>JS38</title>
+    <script>
+        function timer() {
+            now = new Date();
+            hour = now.getHours();
+            minute = now.getMinutes();
+            second = now.getSeconds();
+            hour = ((hour > 12) ? "P. M " + (hour-12) : "A. M. " + hour);
+            minute = ((minute < 10) ? "0" + minute : minute);
+            second = ((second < 10) ? "0" + second : second);
+            document.form1.time.value = hour + " : " + minute + " : " + second;
+            //document.form1.time.value = now.toLocaleTimeString()
+        }
+        window.onload = setInterval('timer()', 1000);
+        window.onunload = clearInterval();
+    </script>
+</head>
+
+<body>
+    <form name="form1">
+        Timer<br><input type="text" name="time">
+    </form>
+</body>
+
+</html>

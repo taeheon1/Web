@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>제목</title>
+
+    <script>
+        //func1();
+        //오류 발생. 익명 함수 선언 전에 호출했기 때문.
+        var func1 = function(){ //function 은 타입이기도 하고 값이기도 한다.
+            console.log("익명 함수");
+        } //정의하고 호출해라 안전한 방식
+        func1(); //함수 객체명(); 
+        
+        func2(); //선언적 함수 호출(실행)
+        function func2(){ 
+            console.log("선언적 함수") 
+        } //안좋으니 쓰지말것.
+    </script>
+</head>
+
+<body></body>
+
+</html>

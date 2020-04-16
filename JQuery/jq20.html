@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>JS20</title>
+    <style>
+        .red {
+            color: brown;
+        }
+    </style>
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $("button").click(function () {
+                $("div").html("<p class='red'>엘리먼트 내부의 "
+                    + "<b>콘텐츠 변경</b><p>"); //덮어쓰기
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <button>클릭</button>
+    <div>내용</div>
+    <div>내용</div>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>js28</title>
+    <script>
+        var photos = new Array("../img/pum1.jpg", "../img/pum2.jpg", "../img/pum3.jpg",
+            "../img/pum4.jpg", );
+        var which = 0;
+
+        function backward() {
+            if (which > 0) {
+                which--;
+            }else{
+                which = photos.length -1;
+            }
+             document.getElementById("pic").src = photos[which];
+        }
+
+        function forward() {
+            if (which < photos.length - 1) {
+                which++;
+            }else{
+                 which = 0;
+            }
+            document.getElementById("pic").src = photos[which];
+        }
+
+    </script>
+</head>
+
+<body>
+    <p style="margin: auto; width: 500px; text-align: center;">
+        <img src="../img/pum2.jpg" id="pic" style="width: 500px; height: 300px;"><br><br>
+        <input type="button" value="<" onclick="backward();"> &nbsp;&nbsp;&nbsp;
+        <input type="button" value=">" onclick="forward();">
+    </p>
+</body>
+
+</html>

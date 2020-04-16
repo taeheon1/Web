@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>js20</title>
+
+</head>
+
+<body>
+    <p>Hello World!</p>
+    <p>This example demonstrates the getElementsByTagName method</p>
+    <p id="demo"></p>
+    <script>
+        var x = document.getElementsByTagName("p");
+        document.getElementById("demo").innerHTML = x[1].innerHTML + "<br>";
+        document.getElementById("demo").innerHTML += x.length;
+
+    </script>
+</body>
+
+</html>

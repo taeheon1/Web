@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>JS16가변배열매개변수객체</title>
+    <script>
+        var n = 0; //전역변수
+        //함수를 생성
+        function sumAll() { //괄호안에 눈에 보이지않는 arguments가 있음.
+            var output = 0;
+            for (var i = 0; i < arguments.length; i++) {
+                output += arguments[i];
+            }
+            //여기에서도 i가 출력가능 funtion 함수영역 내에서는 모든 변수 사용가능
+            return output;
+        }
+        // 함수를 호출 및 출력
+        document.write(sumAll(1, 2, 3, 4, 5, 6, 7, 8, 9));
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
